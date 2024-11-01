@@ -1,0 +1,622 @@
+@font-face {
+    font-family: 'SVN-HC 1785 GLC Baskerville';
+    src: url('../font/SVN-HC-1785GLCBaskerville.eot');
+    src: url('../font/SVN-HC-1785GLCBaskerville.eot?#iefix') format('embedded-opentype'),
+        url('../font/SVN-HC-1785GLCBaskerville.woff2') format('woff2'),
+        url('../font/SVN-HC-1785GLCBaskerville.woff') format('woff'),
+        url('../font/SVN-HC-1785GLCBaskerville.ttf') format('truetype'),
+        url('../font/SVN-HC-1785GLCBaskerville.svg#SVN-HC-1785GLCBaskerville') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-HC Calvous';
+    src: url('../font/SVN-HC-Calvous.eot');
+    src: url('../font/SVN-HC-Calvous.eot?#iefix') format('embedded-opentype'),
+        url('../font/SVN-HC-Calvous.woff2') format('woff2'),
+        url('../font/SVN-HC-Calvous.woff') format('woff'),
+        url('../font/SVN-HC-Calvous.ttf') format('truetype'),
+        url('../font/SVN-HC-Calvous.svg#SVN-HC-Calvous') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-HC Appareo';
+    src: url('../font/SVN-HC-AppareoBlackItalic.eot');
+    src: url('../font/SVN-HC-AppareoBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/SVN-HC-AppareoBlackItalic.woff2') format('woff2'),
+        url('../font/SVN-HC-AppareoBlackItalic.woff') format('woff'),
+        url('../font/SVN-HC-AppareoBlackItalic.ttf') format('truetype'),
+        url('../font/SVN-HC-AppareoBlackItalic.svg#SVN-HC-AppareoBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #FBBF49;
+    
+}
+.header *{
+    font-family: 'SVN-HC Calvous';
+    
+}
+.list_bot_header{
+    color: #1A4185;
+}
+a{
+    text-decoration: none;
+}
+.hoptac:hover{
+    color: #BD2C13;
+}
+.top_header{
+    display: flex;
+    justify-content: space-around; 
+    max-width: 1000px;
+    line-height: 130px;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     flex-wrap: wrap; 
+}
+.logo{
+    height:130px;
+}
+/* thanh tim kiem */
+.search input{
+    height: 25px;
+    width: 230px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 25px;
+    border: 0;
+    font-size: 15px;
+    background-color: #fedd9c;
+    border-radius: 100px;
+}
+.search{
+    position: relative;
+    height: 100%;
+}
+.search i{
+    position: absolute;
+    line-height: 134px;
+    right: 8px;
+}
+
+::placeholder{
+    color: #1A4185;
+}
+/* nut loc san pham */
+.loc{
+    height: 100%;
+}
+.loc button{
+    height: 28px;
+    width: 60px;
+    border: 0;
+    font-size: 13px;
+    border-radius: 100px;
+    background-color: #fedd9c;
+}
+
+.loc i{
+    margin-left: 5px;
+    font-size:15px;
+}
+/*  gio hang */
+.shopping{
+    height:100%;
+    color:#1A4185;
+    cursor: pointer;
+}
+.shopping i{
+    margin-left: 5px;
+}
+.shopping *{
+    cursor: pointer;
+    color:#1A4185;
+}
+.shopping:hover *{
+    color:#BD2C13;
+}
+.shopping:hover {
+    color:#BD2C13;
+}
+.login_out{
+    cursor: pointer;
+    color:#1A4185;
+    height:100%;
+}
+.login_out:hover{
+    cursor: pointer;
+    color:#BD2C13;
+}
+/* bot header */
+.bot_header{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin:auto;
+    line-height: 50px;
+    flex-wrap: wrap;
+    height: auto;
+}
+.bot_header div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.list_menu{
+    color:#1A4185
+}
+.bot_header *:hover{
+    color: #BD2C13;
+}
+.list_menu i{   
+    margin-right: 5px;
+}
+.submenu ul{
+    list-style: none;
+    height: auto;
+    width: 220px;
+    background-color: #fedd9cd0;
+    padding-left: 0px;
+    margin-top: 0;
+    border-radius: 30px;
+    border: 4px solid #FBBF49;
+    overflow: hidden;
+}
+.submenu ul>li{
+    padding-left: 20px;
+}
+.submenu ul>li a{
+    color: #1A4185;
+}
+.submenu ul>li:hover a{
+    color: #ec9d00;
+}
+.submenu ul>li:hover{
+    background-color: #BD2C13;
+}
+.list_bot_header:hover{
+    border-bottom: 4px solid #BD2C13;
+}
+.danhsach:hover a{
+    border-bottom: 4px solid #BD2C13;
+    color:#BD2C13;
+}
+ .list_menu{
+    position: relative;
+
+} 
+.submenu{
+    position: absolute;
+    display: none;
+    z-index: 98;
+}
+.list_menu:hover .submenu{
+    display: block;
+}
+
+.main_home{
+    display: contents;
+}
+.main_home_content{
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fedd9c;
+    text-align: center;
+    color: #BD2C13;
+    font-size: 50px;
+    font-family: 'SVN-HC Calvous' ;
+}
+.landscape_manage{
+    display: none;
+    background-color: #fedd9c;
+    height: auto;
+    width: 100vw;
+}
+.donhang_manage{
+    display: none;
+    background-color: #fedd9c;
+    height: auto;
+    width: 100vw;
+}
+.khachhang_manage{
+    display: contents;
+    background-color: #fedd9c;
+    height: auto;
+    width: 100vw;
+}
+
+.khachhang_content{
+    width: auto;
+    height: auto;
+    background-color: #fedd9c;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.donhang_content{
+    width: auto;
+    height: auto;
+    background-color: #fedd9c;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.landscape_content{
+    width: auto;
+    height: auto;
+    background-color: #fedd9c;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+ .piccontent1{
+    border-radius:20px;
+    margin: 10px;
+    width:890px;
+    height: 1020px;
+    background-color: #1A4185;
+ }
+ .piccontent1donhang{
+    border-radius:20px;
+    margin: 10px;
+    width:890px;
+    height: auto;
+    background-color: #1A4185;
+ }
+
+ .piccontent2{
+    margin: 10px;
+    width:400px;
+    height:auto;
+    background-color: #fedd9c;
+ }
+
+ .finding_nemo{
+    border-radius: 20px;
+    width:400px;
+    height: auto;
+    background-color: #1A4185;
+ }
+ 
+ .piccontent1_header{
+    color: #FBBF49;
+    font-size: 20px;
+    font-family: 'SVN-HC Calvous' ;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+ }
+
+ .piccontent1 table{
+    color:#fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+    border: #FBBF49 2px groove;
+    text-align: center;
+    width: 100%;
+ }
+ .piccontent1 td{
+    text-align: center;
+    color:#fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+    border: #FBBF49 2px groove;
+ }
+
+ .piccontent1donhang table{
+    color:#fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+    border: #FBBF49 2px groove;
+    text-align: center;
+    width: 100%;
+ }
+ .piccontent1donhang td{
+    text-align: center;
+    color:#fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+    border: #FBBF49 2px groove;
+ }
+
+ .refixpic{
+    height:50px;width:100%;line-height: 50px;
+ }
+
+ .refixpic:hover{
+    background-color: #fff;
+    color: #1A4185;
+
+ }
+
+ .picture_paging{
+    border-radius: 15px;
+    background-color: #fedd9c;
+    height: 50px;
+    width: 100% ;
+    color: #1A4185;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #1A4185;
+    font-family: 'SVN-HC Calvous' ;
+ }
+
+ .pagebox{
+    display:flex;
+    height:70%;
+    width: 3%;
+    background-color:#FBBF49;
+    margin:10px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    line-height:30px ;
+    cursor: pointer;
+}
+
+.pagebox:hover{
+    color:#FBBF49;
+    background-color:#BD2C13;
+}
+
+.picname label{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+.taotranh{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.taotranh label{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.picname input{
+    color: black;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.typename{
+    margin-top: 10px;
+}
+.typename label{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.typename select{
+    color: black;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.tonename{
+    margin-top: 10px;
+}
+.tonename label{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.tonename select{
+    color: black;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+
+.materialname{
+    padding: 20px;
+}
+.materialname label{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.materialname select{
+    color: black;
+    font-size: 15px;
+    font-family: 'SVN-HC Calvous' ;
+}
+
+.resetfind, #confirmfix,#resetfix{
+    text-align: center;font-size: 15px;font-family: 'SVN-HC Calvous' ;color: #fff;
+}
+
+
+.resetfind:hover, #confirmfix:hover,#resetfix:hover{
+    color: #fedd9c;
+}
+
+.creating_nemo{
+    margin-top: 20px;
+    border-radius: 20px;
+    width:400px;
+    height: auto;
+    background-color: #1A4185;
+ }
+
+ .taotranh:hover label{
+    color: #fedd9c;
+ }
+
+ /* sua */
+ .picture_information{
+    display: none;
+}
+.picture_infor{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 3000px;
+    width: 100vw;
+    background-color: #d6992f92; 
+    z-index: 99;
+    font-family:'SVN-HC Calvous' ;
+    font-size: 12px;
+}
+.picture_infor-box{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: 15.2px;
+    position: relative;
+    width: auto;
+    height: 640px;
+    background-color:#1A4185;
+    border: 5px solid #FBBF49;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease,height .2s ease;
+    /* transform: scale(0); */
+    z-index: 99;
+    color: #1A4185;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+} 
+.colum1{
+    margin-left: 10px;
+}
+.icon-close-infor_img{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #FBBF49;
+    font-size: 2em;
+    color:#1A4185;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.colum2{
+    width:400px;
+}
+
+.form_information{
+    display: none;
+}
+.form_infor-box .icon-close-infor{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #1A4185;
+    font-size: 2em;
+    color: #FBBF49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+} 
+.form_infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #d6992f92; 
+    z-index: 99;
+}
+.form_infor-box {
+    font-family: 'SVN-HC Calvous';
+    color: #1A4185;
+    font-size: 18px;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+    position: fixed;
+    border-radius:20px ;
+    background-color: #FBBF49;
+    z-index: 99;;
+    cursor: pointer;
+    border: #1A4185;
+    border-style: solid;
+    border-width: 3px;
+}
+#submitbuy{
+    height:50px;width:100vw;background-color:#BD2C13;color:white;line-height:50px;text-align:center;font-family:'SVN-HC Calvous'
+}
+
+#submitbuy:hover{
+    background-color:white;color:#BD2C13;
+    cursor: pointer;
+}
+
+.static:hover,.customername:hover{
+    background-color: #fff;
+    color:#1A4185;
+}
+@media only screen and (max-width: 1500px) {
+  
+    .piccontent1{
+      
+        height: 1020px;
+
+     }
+     .piccontent1donhang{
+      
+        height: 100vh;
+
+     }
+ 
+}
+@media only screen and (max-width: 1300px) {
+    .piccontent1, .piccontent1donhang{
+        border-radius:20px;
+        margin: 10px;
+        width:100%;
+        height: auto;
+        background-color: #1A4185;
+     }
+     .piccontent2{
+        height: auto;
+     }
+    
+ 
+}
+
+@media only screen and (max-width: 655px) {
+   
+    .picture_infor-box{
+    height: 800px;
+    }
+ 
+}
