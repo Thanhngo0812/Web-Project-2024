@@ -156,7 +156,7 @@ function filter(){
         }
       }
 
-      if(document.querySelector('#searchbar').value!=''){
+      if(document.querySelector('#searchbar').value!=null){
         checksame=1;
         for(var i=0;i<filpic.length;i++){
             if(filpic[i].picname.toUpperCase().includes(document.querySelector('#searchbar').value.toUpperCase())==false){
