@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="./admin.html">Trang chủ</a></li>
+                    <li><a href="./user-management.html">Người dùng</a></li>
+                    <li><a href="./order-management.html">đơn hàng</a></li>
+                    <li><a href="./product-management.html">sản phẩm</a></li>
+                    <li><a href="./business_performance.html">thống kê</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <div class="user-icon">
+                    <i data-lucide="user-circle"></i>
+                </div>
+                <span class="admin-name">Admin: Ngocong</span>
+                <a  href="./loginad.html" class="logout">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="order-details">
+                <div class="order-header">
+                    <h1 style="color: #1A4185;" class="order-id">Mã đơn hàng #11111</h1>
+
+                </div>
+                <div class="order-dates">
+                    <p>Ngày đặt: 15 tháng 1 năm 2024</p>
+                </div>
+
+                <div class="order-items">
+                    <h2 class="section-title" style="color: #1A4185;">Danh sách tranh</h2>
+                    <div class="product-item">
+                        <img src="./img/an.png" alt="" class="product-image2">
+                        <div class="product-details">
+                            <h3 style="color: #1A4185;" class="product-title">an</h3>
+                            <p class="product-description">tranh hoa</p>
+                            <p style="color: #d10024;" class="product-price">30.000.000 vnđ sl: 1</p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/hoainiem.png" alt="" class="product-image2">
+                        <div class="product-details">
+                            <h3 style="color: #1A4185;" class="product-title">hoài niệm</h3>
+                            <p class="product-description">tranh phong cảnh</p>
+                            <p style="color: #d10024;" class="product-price">25.000.000 vnđ sl: 2</p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/thanghoa.png" alt="" class="product-image2">
+                        <div class="product-details">
+                            <h3 style="color: #1A4185;" class="product-title">thăng hoa</h3>
+                            <p class="product-description">tranh trừu tượng</p>
+                            <p style="color: #d10024;" class="product-price">20.000.000 vnđ sl: 1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h2 style="color:#fff" class="section-title">tóm tắt đơn hàng</h2>
+                    <div class="summary-row">
+                        <span>Tổng sản phẩm:</span>
+                        <span>100.000.000 vnđ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>phí vận chuyển:</span>
+                        <span>500.000 vnđ</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>tổng cộng:</span>
+                        <span>100.500.000 vnđ</span>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-section">
+                        <h2 style="color: #d10024;">Thông tin giao hàng</h2>
+                        <p><strong>Địa chỉ:</strong></p>
+                        <p>123/2 hòa bình</p>
+                        <p>Quận Tân phú</p>
+                        <p><strong>SĐt:</strong> 0909246319</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h2 style="color: #d10024">Thông tin thanh toán</h2>
+                        <p><strong>phương thức:</strong> thẻ thanh toán</p>
+                        <p><strong>Card Number:</strong> 1234 2345 5678 5637</p>
+                        </div>
+
+                </div>
+                </div>
+            </div>
+            <div>
+                <script>
+                    lucide.createIcons();
+                </script>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: #FBBF49;">
+        <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+            <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+        </div>
+    </footer>
+</body>
+</html>

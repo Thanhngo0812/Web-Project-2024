@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh - admin. </title>
+    <link rel="stylesheet" href="./css/loginad.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <!-- <li><a href="admin.html">Home</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="login-container">
+                <h2 style="color: #1A4185;">đăng nhập admin</h2>
+                <form action="admin.html" method="get">
+                    <div class="form-group">
+                        <label style="color: #1A4185;" for="test">Email</label>
+                        <input type="text" id="email" name="email" >
+                    </div>
+                    <div class="form-group">
+                        <label style="color: #1A4185;" for="password">mật khẩu</label>
+                        <input type="password" id="password" name="password" >
+                    </div>
+                    <button style="background-color: #1A4185;" type="submit"  onclick="myFunction()">Đăng nhập</button>
+                    <script>
+                        function myFunction() {
+                          alert("Xin chào admin");
+                        }
+                        </script>
+                </form>
+            </div>
+        </main>
+
+        <footer style="background-color: #FBBF49;">
+            <div style="color: #1A4185;background-color: #FBBF49;" class="container">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

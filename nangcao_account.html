@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kẻ buôn tranh.</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <a href="index_account.html">
+                    <img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index_account.html">tRANG CHỦ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="login-container">
+                <h2>Tìm kiếm nâng cao</h2>
+                <form action="search_account.html" method="get">
+                    <div class="form-group">
+                        <label for="email">tên tranh</label>
+                        <input type="text" id="email" name="name" >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">loại tranh</label>
+                        <select name="type" id="address-select">
+                            <option value="">Tất cả</option>
+                            <option value="1">Tranh phong cảnh</option>
+                            <option value="1">Tranh tĩnh vật</option>
+                            <option value="1">tranh trừu tượng</option>
+                            <option value="1">tranh hoa</option>
+                            <option value="1">tranh ngựa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="full_dc">giá từ</label>
+                        <input type="number" name="fromprice" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="full_dc">đến</label>
+                        <input type="number" name="fromprice" placeholder="">
+                    </div>
+                    <button type="submit" >Tìm kiếm</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

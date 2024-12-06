@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kẻ buôn tranh</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/order.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+          <nav>
+              <ul>
+                  <li><a href="./admin.html">Trang chủ</a></li>
+                  <li><a href="./user-management.html">Người dùng</a></li>
+                  <li><a href="./order-management.html">đơn hàng</a></li>
+                  <li><a href="./product-management.html">sản phẩm</a></li>
+                  <li><a href="./business_performance.html">thống kê</a></li>
+              </ul>
+          </nav>
+          <div class="user-info">
+              <div class="user-icon">
+                  <i data-lucide="user-circle"></i>
+              </div>
+              <span class="admin-name">Admin: Ngocong</span>
+              <a  href="./loginad.html" class="logout">Đăng xuất</a>
+          </div>
+      </div>
+  </header>
+
+    <main>
+      <div class="container">
+        <div class="admin-panel">
+          <div class="admin-sidebar">
+            <h2>Order Management</h2>
+            <ul>
+              <li><a href="./order-management.html">Order List</a></li>
+            </ul>
+          </div>
+          <section class="card" style="margin-bottom: 0px">
+            <div class="filters">
+              <div class="filters-row">
+                <div class="filter-group">
+                  <label class="filter-label">lọc</label>
+                  <div class="date-range">
+                    <div>
+                      <label>từ ngày:</label>
+                      <input type="date" id="start-date" name="start-date" />
+                    </div>
+                    <div class="date-to">
+                      <label>đến ngày:</label>
+                      <input type="date" id="end-date" name="end-date" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filters-row">
+                <div class="filter-group">
+                  <label class="filter-label">Trạng thái</label>
+                  <select id="order-status" name="order-status">
+                    <option value="">tất cả trạng thái</option>
+                    <option value="Pending">chờ xác nhận</option>
+                    <option value="Processing">đang xử lí</option>
+                    <option value="confirmed">đã hoàn tất</option>
+                    <option value="canceled">đã bị hủy</option>
+                  </select>
+                </div>
+
+                <div class="filter-group">
+                  <label class="filter-label">Quận</label>
+                  <select name="Address" id="Address">
+                    <option value="All Address">Tất cả</option>
+                    <option value="1">Quận 1</option>
+                    <option value="1">Quận 3</option>
+                    <option value="1">Quận 4</option>
+                    <option value="1">Quận 5</option>
+                    <option value="1">Quận 6</option>
+                    <option value="1">Quận 7</option>
+                    <option value="1">Quận 8</option>
+                    <option value="1">Quận 10</option>
+                    <option value="1">Quận 11</option>
+                    <option value="1">Quận 12</option>
+                    <option value="1">Quận Tân bình</option>
+                    <option value="1">Quận Tân phú</option>
+                    <option value="1">Quận Bình tân</option>
+                    <option value="1">Quận Bình thạnh</option>
+                    <option value="1">Quận Gò vấp</option>
+                    <option value="1">Quận Phú nhuận</option>
+                  </select>
+                </div>
+
+                <button class="btn">tìm kiếm</button>
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Mã đơn hàng</th>
+                  <th>khách hàng</th>
+                  <th>ngày đặt</th>
+                  <th>Quận</th>
+                  <th>Tổng tiền</th>
+                  <th>trạng thái</th>
+                  <th>chi tiết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1234</td>
+                  <td>jane@gmail.com</td>
+                  <td>2024-12-30</td>
+                  <td>quận 1</td>
+                  <td>50.000.000 vnđ</td>
+                  <td>đang xử lí</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1235</td>
+                  <td>Tsuki123@gmail.com</td>
+                  <td>2024-12-28</td>
+                  <td>Quận tân phú</td>
+                  <td>12.000.000 vnđ</td>
+                  <td>đã hoàn tất</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1236</td>
+                  <td>Buska1245@gmail.com</td>
+                  <td>2024-12-24</td>
+                  <td>Quận 3</td>
+                  <td>180.000.000 vnđ</td>
+                  <td>đã hoàn tất</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1237</td>
+                  <td>jackson123@gmail.com</td>
+                  <td>2024-12-12</td>
+                  <td>quận phú nhuận</td>
+                  <td>15.000.000 vnđ</td>
+                  <td>đã hoàn tất</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1238</td>
+                  <td>jackie123@gmail.com</td>
+                  <td>2024-12-11</td>
+                  <td>quận tân phú</td>
+                  <td>15.000.000 vnđ</td>
+                  <td>đã hoàn tất</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1239</td>
+                  <td>jacjsj123@gmail.com</td>
+                  <td>2024-12-10</td>
+                  <td>quận phú nhuận</td>
+                  <td>18.000.000 vnđ</td>
+                  <td>đã hoàn tất</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1240</td>
+                  <td>jackiechan@gmail.com</td>
+                  <td>2024-12-10</td>
+                  <td>quận tân bình</td>
+                  <td>17.000.000 vnđ</td>
+                  <td>đã hoàn tất</td>
+                  <td>
+                    <a href="./detail-order.html" class="btn">chi tiết</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">&raquo;</a>
+          </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer style="background-color: #FBBF49;">
+      <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+          <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+      </div>
+  </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

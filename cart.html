@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> 0909246319 -----</span>
+          <span><i class="fas fa-envelope"></i> kebuontranh@gmail.com ----- </span>
+          <span><i class="fas fa-map-marker-alt"></i>123/23 hòa bình</span>
+        </div>
+        <div class="user-actions">
+          <a class="login-link">
+              <i class="fas fa-user"></i>
+              <span class="name">thanhngo0812@gmail.com</span>
+          </a>
+          <div class="login-dropdown">
+              <a href="index.html" class="login-option">đăng xuất</a>
+              <a href="order_history.html" class="login-option">lịch sử mua hàng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index_account.html" class="logo-link"
+            ><img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a
+          >
+        </div>
+        <div class="search-bar">
+          <input type="text" style="color: #1A4185 ;background-color: #fedd9c;" placeholder="nhập tên tranh ở đây" />
+          <a href="search_account.html" class="search-button">tìm kiếm</a>
+        </div>
+        <div class="search-bar1">
+          <a href="nangcao_account.html" class="search-button">Tìm kiếm nâng cao</a>
+        </div>
+        <div class="user-menu">
+          <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index_account.html">Trang chủ</a></li>
+          <li> <a href="category_account.html">Tranh phong cảnh</a></li>
+          <li><a href="category_account.html">Tranh hoa</a></li>
+          <li><a href="category_account.html">Tranh trừu tượng</a></li>
+          <li><a href="category_account.html">Tranh tĩnh vật</a></li>
+          <li><a href="category_account.html">Tranh ngựa</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+        <div class="container">
+            <div class="cart-container">
+                <h1 class="page-title">Giỏ hàng</h1>
+                <div class="cart-items">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>sản phẩm</th>
+                                <th>giá</th>
+                                <th>số lượng</th>
+                                <th>tổng</th>
+                                <th>xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="./img/an.png" alt="an" class="cart-item-image">
+                                    <div class="product-info">
+                                        <h3>An</h3>
+                                        <p>tranh hoa</p>
+                                    </div>
+                                </td>
+                                <td>50.000.000 vnđ</td>
+                                <td>
+                                    <input type="number" name="quantity_1" value="1" min="1" max="10" readonly>
+                                </td>
+                                <td>50.000.000 vnđ</td>
+                                <td>
+                                    <button type="button" class="remove-btn">xóa</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./img/docmathaonguyen.png" alt="docmathaonguyen" class="cart-item-image">
+                                    <div class="product-info">
+                                        <h3>dộc mã thảo nguyên</h3>
+                                        <p>tranh ngựa</p>
+                                    </div>
+                                </td>
+                                <td>20.000.000 vnđ</td>
+                                <td>
+                                    <input type="number" name="quantity_2" value="2" min="1" max="10" readonly>
+                                </td>
+                                <td>20.000.000 vnđ</td>
+                                <td>
+                                    <button type="button" class="remove-btn">xóa</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./img/tinhvathoacuc.png" alt="tinhvathoacuc" class="cart-item-image">
+                                    <div class="product-info">
+                                        <h3>tĩnh vật hoa cúc</h3>
+                                        <p>tranh tĩnh vật</p>
+                                    </div>
+                                </td>
+                                <td>35.000.000 vnđ</td>
+                                <td>
+                                    <input type="number" name="quantity_3" value="1" min="1" max="10" readonly>
+                                </td>
+                                <td>35.000.000 vnđ</td>
+                                <td>
+                                    <button type="button" class="remove-btn">xóa</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="update-cart-btn">cập nhật giỏ hàng</button>
+                </div>
+                <div class="cart-summary">
+                    <h2>tóm tắt đơn hàng</h2>
+                    <div class="summary-row">
+                        <span>tổng sản phẩm:</span>
+                        <span>105.000.000 vnđ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>phí vận chuyển:</span>
+                        <span>500.000 vnđ</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>tổng cộng:</span>
+                        <span>105.500.000 vnđ</span>
+                    </div>
+                    <a href="checkout.html" class="checkout-btn">Thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+      </div>
+    </footer>
+</body>
+</html>

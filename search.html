@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kẻ buôn tranh</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/search.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,37 +15,37 @@
       <div class="top-bar">
         <div class="container">
           <div class="contact-info">
-            <span><i class="fas fa-phone"></i> 0909246319 -----</span>
-            <span><i class="fas fa-envelope"></i> kebuontranh@gmail.com ----- </span>
+            <span><i class="fas fa-phone"></i>0909246319 -----</span>
+            <span><i class="fas fa-envelope"></i> kebuontranh@gmail.com -----</span>
             <span><i class="fas fa-map-marker-alt"></i>123/23 hòa bình</span>
+          </div>
+          <div class="user-actions">
+            <a class="login-link">
+              <i class="fas fa-user"></i>
+              <span class="name">Đăng nhập/đăng ký</span>
+            </a>
+            <div class="login-dropdown">
+              <a href="dangnhap.html" class="login-option">đăng nhập</a>
+              <a href="dangki.html" class="login-option">đăng ký</a>
             </div>
-            <div class="user-actions">
-              <a class="login-link">
-                <i class="fas fa-user"></i>
-                <span class="name">Đăng nhập/Đăng ký</span>
-              </a>
-                <div class="login-dropdown">
-                  <a href="dangnhap.html" class="login-option">Đăng nhập</a>
-                  <a href="dangki.html" class="login-option">Đăng ký</a>
-                </div>
-            </div>
+          </div>
         </div>
       </div>
       <div class="main-header">
         <div class="container">
           <div class="logo">
-            <a href="index.html" class="logo-link"><img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a>
+            <a href="index.html" class="logo-link"
+              ><img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a
+            >
           </div>
           <div class="search-bar">
-            <input type="text" style="color: #1A4185 ;background-color: #fedd9c;" placeholder="Nhập tên tranh ở đây" />
-            <a href="search.html" class="search-button">Tìm kiếm</a>
+            <input type="text" style="color: #1A4185 ;background-color: #fedd9c;" placeholder="nhập tên tranh ở đây" />
+            <a href="search.html" class="search-button">tìm kiếm</a>
           </div>
           <div class="search-bar1">
             <a href="nangcao.html" class="search-button">Tìm kiếm nâng cao</a>
           </div>
-          <div class="user-menu">
-           
-          </div>
+          <div class="user-menu"></div>
         </div>
       </div>
       <nav>
@@ -61,61 +61,41 @@
         </div>
       </nav>
     </header>
-
-   <main>
+    <main>
+      <!-- Filter Bar -->
       <div class="container">
+        
         <div class="filter-sidebar">
           <h3 style="color:#a7001c">Kẻ buôn tranh</h3>
           <h5 >mang một màu sắc đặc trưng, từ thiết kế đến màu sắc đều nhuộm một màu vàng rực rỡ đậm tinh hoài cỗ của miền Nam Việt Nam 1970s.</h5>
           <h3 style="color:#a7001c">thành tựu</h3>
           <h5>+ FACEBOOK Gần 500 triệu người thích với Hơn 30 triệu lượt tiếp cận trong 1 tháng Tăng hơn 160.000 likes trong 1 tháng</h5>
-          <!-- <form action="search.html" method="GET">
-            <h3>Name:</h3>
-            <div class="filter-name">
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter product name"
-                class="filter-input"
-              />
-            </div>
+        </div>
 
-            <h3>Category:</h3>
-            <div class="filter-category">
-              <select name="category" class="filter-select">
-                <option value="all">All Categories</option>
-                <option value="gundam">Gundam</option>
-                <option value="kamen_rider">Kamen Rider</option>
-                <option value="standee">Standee</option>
-                <option value="keychain">Keychain</option>
-                <option value="plush">Plush</option>
-                <option value="figure">Figure</option>
-              </select>
-            </div>
-
-            <h3>Price:</h3>
-            <div class="filter-price">
-              <label for="priceRange">Range:</label>
-              <div class="range-container custom-range">
-                <div class="range-label">0</div>
-                <input
-                  type="range"
-                  id="priceRange"
-                  name="price"
-                  min="0"
-                  max="150"
-                  value="50"
-                  class="filter-input"
-                />
-                <div class="range-label">150</div>
+        <section class="product-grid">
+          <div class="filter-box">
+            <span class="sort-label">Sắp xếp theo:</span>
+            <a class="sort-label" href="search.html"><button class="filter-btn">loại tranh</button></a>
+            <a  class="sort-label" href="search.html"><button class="filter-btn">mới nhất</button></a>
+            <a  class="sort-label" href="search.html"
+              ><button class="filter-btn">Bán chạy nhất</button></a
+            >
+    
+            <div class="filter-option">
+              <label class="price-btn" for="price-toggle">GIá</label>
+              <input type="checkbox" id="price-toggle" class="price-toggle" />
+              <div class="price-dropdown">
+                <a href="search.html" class="price-option"
+                  >thấp tới cao</a
+                >
+                <a href="search.html" class="price-option"
+                  >cao tới thấp</a
+                >
               </div>
             </div>
-
-            <button type="submit" class="filter-button">Search</button>
-          </form> -->
-        </div>
-        <section class="product-grid">
-          <div class="product-categories">
+          </div>
+          <div class="search-results">
+            <h1 style="color:#1A4185">kết quả tìm kiếm:</h1>
           </div>
           <!-- Row 1 -->
           <div class="product-row">
@@ -240,13 +220,13 @@
         </section>
       </div>
       <div class="pagination">
-        <a class="cay" href="index.html">&laquo;</a>
-        <a class="cay" style="background-color: #d10024;color:#fff" href="index.html" class="active">1</a>
-        <a class="cay" href="index.html">2</a>
-        <a class="cay" href="index.html">3</a>
-        <a class="cay" href="index.html">4</a>
-        <a class="cay" href="index.html">5</a>
-        <a class="cay" href="index.html">&raquo;</a>
+        <a href="search.html">&laquo;</a>
+        <a href="search.html" class="active">1</a>
+        <a href="search.html">2</a>
+        <a href="search.html">3</a>
+        <a href="search.html">4</a>
+        <a href="search.html">5</a>
+        <a href="search.html">&raquo;</a>
     </div>
     </main>
 

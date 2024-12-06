@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kẻ buôn tranh.</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <a href="index.html">
+                    <img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">tRANG CHỦ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="login-container">
+                <h2>ĐĂNG KÝ</h2>
+                <form action="index_account.html" method="get">
+                    <div class="form-group">
+                        <label for="email">eMAIL</label>
+                        <input type="text" id="email" name="email" >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">MẬT KHẨU</label>
+                        <input type="password" id="password" name="password" >
+                    </div>
+                    <div class="form-group">
+                        <label for="full_dc">Địa chỉ</label>
+                        <input type="text" name="full_dc" placeholder="Địa chỉ cụ thể">
+                            <select name="address_select" id="address-select">
+                              <option value="">Quận</option>
+                              <option value="1">Quận 1</option>
+                              <option value="1">Quận 3</option>
+                              <option value="1">Quận 4</option>
+                              <option value="1">Quận 5</option>
+                              <option value="1">Quận 6</option>
+                              <option value="1">Quận 7</option>
+                              <option value="1">Quận 8</option>
+                              <option value="1">Quận 10</option>
+                              <option value="1">Quận 11</option>
+                              <option value="1">Quận 12</option>
+                              <option value="1">Quận Tân bình</option>
+                              <option value="1">Quận Tân phú</option>
+                              <option value="1">Quận Bình tân</option>
+                              <option value="1">Quận Bình thạnh</option>
+                              <option value="1">Quận Gò vấp</option>
+                              <option value="1">Quận Phú nhuận</option>
+
+                          </select>
+                    </div>
+                    <button type="submit" onclick="myFunction()">ĐĂNG KÝ</button>
+                    <script>
+                        function myFunction() {
+                          alert("Đăng kí thành công. ^^");
+                        }
+                        </script>
+                </form>
+                <div class="form-footer">
+                    <p>ĐÃ CÓ TÀI KHOẢN? <a href="dangnhap.html" class="signup-link">ĐĂNG NHẬP</a></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

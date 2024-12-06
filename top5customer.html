@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="./admin.html">Trang chủ</a></li>
+                    <li><a href="./user-management.html">Người dùng</a></li>
+                    <li><a href="./order-management.html">đơn hàng</a></li>
+                    <li><a href="./product-management.html">sản phẩm</a></li>
+                    <li><a href="./business_performance.html">thống kê</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <div class="user-icon">
+                    <i data-lucide="user-circle"></i>
+                </div>
+                <span class="admin-name">Admin: Ngocong</span>
+                <a  href="./loginad.html" class="logout">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container admin-panel" style="
+        border-left-width: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    ">
+            <div class="admin-sidebar">
+                <h2>thống kê</h2>
+                <ul>
+                    <li><a href="./business_performance.html" class="active">thống kê sản phẩm</a></li>
+                    <li style="color: #1A4185;"><a style="color: #1A4185;" href="./top5customer.html"></a>top khách hàng</li>
+                </ul>
+            </div>
+            <section class="admin-content">
+                <h3 style="color: #b91c1c;">Top 5 khách hàng</h3>
+        <table class="table-wrapper">
+            <thead>
+                <tr>
+                    <th>TOP</th>
+                    <th>khách hàng</th>
+                    <th>lợi nhuận</th>
+                    <th>xem hóa đơn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jane123@gmail.com</td>
+                    <td>500.000.000 vnđ</td>
+                    <td><a href="./customer-invoices.html" class="btn">xem hóa đơn</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>zoro567@gmail.com</td>
+                    <td>180.000.000 vnđ</td>
+                    <td><a href="./customer-invoices.html" class="btn">xem hóa đơn</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>kaizhaha@gmail.com</td>
+                    <td>150.000.000 vnđ</td>
+                    <td><a href="./customer-invoices.html" class="btn">xem hóa đơn</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>CeaserKng@gmail.com</td>
+                    <td>120.000.000 vnđ</td>
+                    <td><a href="./customer-invoices.html" class="btn">xem hóa đơn</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Nicolacjackson@gmail.com</td>
+                    <td>99.000.000 vnđ</td>
+                    <td><a href="./customer-invoices.html" class="btn">xem hóa đơn</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+            </section>
+        </div>
+    </main>
+</div>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
+<footer style="background-color: #FBBF49;">
+    <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+        <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+    </div>
+</footer> 

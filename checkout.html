@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> 0909246319 -----</span>
+          <span><i class="fas fa-envelope"></i> kebuontranh@gmail.com ----- </span>
+          <span><i class="fas fa-map-marker-alt"></i>123/23 hòa bình</span>
+        </div>
+        <div class="user-actions">
+          <a class="login-link">
+              <i class="fas fa-user"></i>
+              <span class="name">thanhngo0812@gmail.com</span>
+          </a>
+          <div class="login-dropdown">
+              <a href="index.html" class="login-option">đăng xuất</a>
+              <a href="order_history.html" class="login-option">lịch sử mua hàng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index_account.html" class="logo-link"
+            ><img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a
+          >
+        </div>
+        <div class="search-bar" >
+          <input type="text" style="color: #1A4185 " placeholder="nhập tên tranh ở đây" />
+          <a href="search_account.html" class="search-button">tìm kiếm</a>
+        </div>
+        <div class="search-bar1">
+          <a href="nangcao_account.html" class="search-button">Tìm kiếm nâng cao</a>
+        </div>
+        <div class="user-menu">
+          <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index_account.html">Trang chủ</a></li>
+          <li> <a href="category_account.html">Tranh phong cảnh</a></li>
+          <li><a href="category_account.html">Tranh hoa</a></li>
+          <li><a href="category_account.html">Tranh trừu tượng</a></li>
+          <li><a href="category_account.html">Tranh tĩnh vật</a></li>
+          <li><a href="category_account.html">Tranh ngựa</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+        <div class="container">
+            <form action="#show-notification" method="get" class="checkout-form">
+                <h1 class="page-title" style="color: #1A4185;">Thanh toán</h1>
+                <div class="checkout-container">
+                    <div class="shipping-info">
+                        <h2>Thông tin giao hàng</h2>
+                        <div class="address-selection">
+                            <h3>chọn địa chỉ giao hàng</h3>
+                            <select name="address_select" id="address-select">
+                                <option value="">chọn địa chỉ đã lưu</option>
+                                <option value="1">123/23 tân thới hào, Quận Tân Phú</option>
+                                <option value="2">136 bình thới, Quận 11</option>
+                            </select>
+                        </div>
+                        <div class="new-address-form">
+                            <h3>hoặc chọn địa chỉ mới</h3>
+                            <input type="text" name="full_name" placeholder="Địa chỉ cụ thể">
+                            <select name="address_select" id="address-select">
+                              <option value="">Quận</option>
+                              <option value="1">Quận 1</option>
+                              <option value="1">Quận 3</option>
+                              <option value="1">Quận 4</option>
+                              <option value="1">Quận 5</option>
+                              <option value="1">Quận 6</option>
+                              <option value="1">Quận 7</option>
+                              <option value="1">Quận 8</option>
+                              <option value="1">Quận 10</option>
+                              <option value="1">Quận 11</option>
+                              <option value="1">Quận 12</option>
+                              <option value="1">Quận Tân bình</option>
+                              <option value="1">Quận Tân phú</option>
+                              <option value="1">Quận Bình tân</option>
+                              <option value="1">Quận Bình thạnh</option>
+                              <option value="1">Quận Gò vấp</option>
+                              <option value="1">Quận Phú nhuận</option>
+
+                          </select>
+                            <input type="tel" name="phone" placeholder="Số điện thoại">
+                        </div>
+                    </div>
+                    <div class="payment-info">
+                        <h2>Phương thức</h2>
+                        <div class="payment-options">
+                            <label>
+                                <input type="radio" name="payment" value="cash" checked> Trả tiền mặt khi nhận hàng
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="bank_transfer"> chuyển khoản
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="credit_card"> Thẻ thanh toán
+                            </label>
+                        </div>
+                        <div class="credit-card-form">
+                            <h3>Thông tin thẻ thanh toán</h3>
+                            <input type="text" name="card_number" placeholder="Mã thẻ" maxlength="16">
+                            <input type="text" name="card_name" placeholder="Tên thẻ">
+                            <div class="card-details">
+                                <input type="text" name="expiry_date" placeholder="MM/YY" maxlength="5">
+                                <input type="text" name="cvv" placeholder="CVV" maxlength="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h2 style="color: #d10024;">tóm tắt đơn hàng</h2>
+                    <div class="summary-row">
+                        <span>Tổng sản phẩm:</span>
+                        <span>105.000.000 vnđ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>phí vận chuyển:</span>
+                        <span>500.000 vnđ</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Tổng cộng:</span>
+                        <span>105.000.000 vnđ</span>
+                    </div>
+                    <button type="button" class="place-order-btn">đặt hàng</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+      </div>
+    </footer>
+    <script src="./js/popup.js"></script>
+</body>
+</html>

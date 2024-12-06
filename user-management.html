@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/user.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="./admin.html">Trang chủ</a></li>
+                        <li><a href="./user-management.html">Người dùng</a></li>
+                        <li><a href="./order-management.html">đơn hàng</a></li>
+                        <li><a href="./product-management.html">sản phẩm</a></li>
+                        <li><a href="./business_performance.html">thống kê</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info">
+                    <div class="user-icon">
+                        <i data-lucide="user-circle"></i>
+                    </div>
+                    <span class="admin-name">Admin: Ngocong</span>
+                    <a  href="./loginad.html" class="logout">Đăng xuất</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="admin-panel">
+                    <div class="admin-sidebar">
+                        <h2 style="color: #d10024;">quản lý người dùng</h2>
+                        <ul>
+                            <li style="color: #1A4185;"><a style="color: #1A4185;" href="./user-management.html">danh sách người dùng</a></li>
+                            <li><a style="color: #1A4185;" href="./add-user.html">thêm người dùng mới</a></li>
+                        </ul>
+                    </div>
+                    <div class="admin-content">
+                        <h2 style="color: #d10024;">Danh sách người dùng</h2>
+                        <div class="action-bar">
+                            <div class="search-bar">
+                                <input type="text" placeholder="nhập gmail">
+                            </div>        
+                        </div>
+                        <table class="user-table">
+                            <thead>
+                                <tr>
+                                    <th>mã</th>
+                                    <th>Địa chỉ email</th>
+                                    <th>phân quyền</th>
+                                    <th>khóa</th>
+                                    <th>sửa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>beckhem@gmail.com</td>
+                                    <td>quản lí</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" >
+                                            <span class="slider"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <a href="edit-user.html" class="action-btn" style="background-color: #1A4185; color: white">sửa</a>
+                                    </td>
+ 
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>nicolackjack123@gmail.com</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" >
+                                            <span class="slider"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <a href="edit-user.html" class="action-btn" style="background-color: #1A4185; color: white">sửa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>anthony123@gmail.com</td>
+                                    <td>người dùng</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox" >
+                                            <span class="slider"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <a href="edit-user.html" class="action-btn" style="background-color: #1A4185; color: white">sửa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>rudiger123@gmail.com</td>
+                                    <td>người dùng</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <a href="edit-user.html" class="action-btn" style="background-color: #1A4185; color: white">sửa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5   </td>
+                                    <td>ronaldo123@gmail.com</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <a href="edit-user.html" class="action-btn" style="background-color: #1A4185; color: white">sửa</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer style="background-color: #FBBF49;">
+            <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer> 
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

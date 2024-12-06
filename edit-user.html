@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kẻ buôn tranh</title>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <link rel="stylesheet" href="./css/user.css">
+    </head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="./admin.html">Trang chủ</a></li>
+                        <li><a href="./user-management.html">Người dùng</a></li>
+                        <li><a href="./order-management.html">đơn hàng</a></li>
+                        <li><a href="./product-management.html">sản phẩm</a></li>
+                        <li><a href="./business_performance.html">thống kê</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info">
+                    <div class="user-icon">
+                        <i data-lucide="user-circle"></i>
+                    </div>
+                    <span class="admin-name">Admin: Ngocong</span>
+                    <a  href="./loginad.html" class="logout">Đăng xuất</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="admin-panel">
+                    <div class="admin-sidebar">
+                        <h2 style="color: #d10024;">quản lý người dùng</h2>
+                        <ul>
+                            <li style="color: #1A4185;"><a style="color: #1A4185;" href="./user-management.html">danh sách người dùng</a></li>
+                            <li><a style="color: #1A4185;" href="./add-user.html">thêm người dùng mới</a></li>
+                        </ul>
+                    </div>
+                    <div class="admin-content">
+                        <div id="edit-user-form" class="hidden">
+                            <h3 style="color: #d10024;">chỉnh sửa thông tin người dùng</h3>
+                            <form class="user-form">
+                                <div class="form-group">
+                                    <label for="edit-email">Email:</label>
+                                    <input type="email" id="edit-email" name="edit-email" value="lionelmessi123@gmail.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="edit-role">phân quyền:</label>
+                                    <select id="edit-role" name="edit-role">
+                                        <option value="user">người dùng</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="manager">quản lí</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="full_dc">Địa chỉ</label>
+                                    <input type="text" name="full_dc" placeholder="Địa chỉ cụ thể" value="132/2 tân thới hòa">
+                                        <select name="address_select" id="address-select">
+                                          <option value="1">Quận 1</option>
+                                          <option value="1">Quận 3</option>
+                                          <option value="1">Quận 4</option>
+                                          <option value="1">Quận 5</option>
+                                          <option value="1">Quận 6</option>
+                                          <option value="1">Quận 7</option>
+                                          <option value="1">Quận 8</option>
+                                          <option value="1">Quận 10</option>
+                                          <option value="1">Quận 11</option>
+                                          <option value="1">Quận 12</option>
+                                          <option value="1">Quận Tân bình</option>
+                                          <option value="1">Quận Tân phú</option>
+                                          <option value="1">Quận Bình tân</option>
+                                          <option value="1">Quận Bình thạnh</option>
+                                          <option value="1">Quận Gò vấp</option>
+                                          <option value="1">Quận Phú nhuận</option>
+            
+                                      </select>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" onclick="myFunction()" class="action-btn" style="background-color: green; color: white;">thay đổi</button>
+                                    <script>
+                                        function myFunction() {
+                                  alert("thay đổi thành công");
+                                }
+                                     </script>
+                                    <a href="user-management.html" onclick="del()" class="action-btn" style="background-color: red; color: white;">xóa</a>
+
+                            <script>
+                              function del() {
+                                const confirmation = confirm("bạn có chắc chắn muốn xóa");
+                                if (confirmation) {
+                                  alert("xóa thành công");
+                                } else {
+                                  alert("hủy xóa");
+                                }
+                              }
+                            </script>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer style="background-color: #FBBF49;">
+            <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer> 
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

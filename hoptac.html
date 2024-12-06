@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kẻ Buôn Tranh</title>
+    <link rel="stylesheet" href="asset/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="header">
+    <div class="top_header">
+        <div class="logo"><a href=""><img style="width: 250px;height: 100%;" src="asset/img/logo.png" alt="logo"></a></div>
+        <div class="search"><input id="searchbar" style="color: #1A4185"  type="text" placeholder="Tìm kiếm sản phẩm"><i onclick="filter()" class="fa fa-search" ></i></div>
+        <div class="loc"onclick="onfilter()"><button type="submit" style="color: #1A4185;">LỌC<i class="fa-solid fa-caret-down"></i></button></div>
+        <div class="shopping"onclick="canhbaodangnhap()">GIỎ HÀNG<i class="fa-solid fa-cart-plus" ></i></div>
+        <div id="vach" style="height:40px;border-left: 3px solid #1A4185;margin-top: 45px;border-radius: 99px;"></div>
+        <div class="login_out">ĐĂNG KÝ / ĐĂNG NHẬP</div>
+    </div>
+    <div class="bot_header">
+        <div class="list_menu">
+            <div  class="danhsach" style="padding-left: 5px;padding-right: 5px;"><a ><i class="fa-solid fa-bars"></i>DANH MỤC SẢN PHẨM</a></div>
+            <div class="submenu">   
+                <ul>
+                    <li class="phongcanh"><a  href="#phongcanh">TRANH PHONG CẢNH</a></li>
+                    <li class="tranhhoa"><a  href="#tranhhoa">TRANH hoa</a></li>
+                    <li class="tinhvat"><a  href="#tinhvat">TRANH TĨNH VẬT</a></li>
+                    <li class="truutuong"><a  href="#truutuong">TRANH TRỪU TƯỢNG</a></li>
+                    <li class="tranhngua"><a  href="#ngua">TRANH NGỰA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div><a href="index.html"class="list_bot_header ">TRANG CHỦ</a></div>
+        <div><a href="#gioithieu"class="list_bot_header gioithieu">GIỚI THIỆU</a></div>
+        <div><a href="#lienhe"class="list_bot_header lienhe">LIÊN HỆ</a></div>
+        <div><a href="hoptac.html"class="list_bot_header hoptac">HỢP TÁC</a></div>
+        <div><a href="tuyendung.html"class="list_bot_header tuyendung">TUYỂN DỤNG</a></div>
+        <div style="font-size: 25px;"><a href="https://www.facebook.com/leomessi" class="list_bot_header"><i class="fa-brands fa-square-facebook" style="color: #0f62f0;"></i></a></div>
+        <div style="font-size: 25px;"><a href="https://www.instagram.com/leomessi" class="list_bot_header"><i class="fa-brands fa-instagram" style="color: #e11955;"></i></a></div>
+    </div>
+</div>
+<div class="cooperate-main">
+    <div class="cooperate">
+        <div  class="cooperate_left"></div>
+        <div class="cooperate_main">
+            <div class="cooperate1">
+                <div style="height: 50%;justify-content: center;text-align: center; margin-bottom: 10px;">
+                    <h1>QUY TRÌNH HỢP TÁC CÙNG</h1>
+                </div>
+                <div style="height: 50%;justify-content: center;text-align: center;">
+                    <h1>KẺ BUÔN TRANH</h1>
+                </div>
+            </div>
+            <div class="cooperate2">
+                <div class="cooperate2_content">
+                    <div class="cooperate2_content_1"><h3>Bước 1. Tìm hiểu thông tin </h3><p>Quý khách sẽ được tư vấn cụ thể và chi 
+                        tiết về tất cả các vấn đề trước khi quyết 
+                        định hợp tác nhượng quyền kinh doanh.</p></div>
+                    <div class="cooperate2_content_2"><h3>Bước 2. Tìm mặt bằng kinh doanh </h3><p>Sau khi đã tìm hiểu kỹ và đầy đủ thông 
+                        tin, quý khách xác định mặt bằng mình dự 
+                        định kinh doanh..</p></div>
+                </div>
+            </div>
+            <div class="cooperate3">
+                <div class="cooperate3_content">
+                    <div class="cooperate3_content_1"><h3>Bước 3 : Tiến hành hợp tác ( đặt cọc vị trí )</h3><p>Quý khách sau khi được CHẤP THUẬN 
+                        mặt bằng và quyết định hợp tác sẽ phải đặt 
+                        cọc vị trí kinh doanh.</p></div>
+                    <div class="cooperate3_content_2"><h3>Bước 4: Ký hợp đồng-Training</h3><p>Sau khi đã tìm hiểu kỹ và đầy đủ thông tin, 
+                        quý khách xác định mặt bằng mình dự định 
+                        kinh doanh.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="cooperate_right"></div>
+    </div>
+
+</div>
+    <!-- FOOTER CONG THANH -->
+    <div class="footer_2">
+        <div class="footer1_2">
+        <div class="item item1">
+            <p class="content-footer">Địa chỉ phòng tranh: 326 Hòa Bình, phường Hiệp Tân, quận Tân Phú. <br>
+            Địa chỉ văn phòng hợp tác: 169/32 Tôn Thất Đạm, Quận 1.</p>
+        </div>
+        <b style="flex:1; margin: 20px 0; width: 4px; background-color: #1A4185; text-align: center;flex: 1;"></b>
+        <div class="item item2">
+            <p class="content-footer">Liên hệ hợp tác: 0931964249 <br> (mr.Thành).<br>
+            Liên hệ về việc mua bán sản phẩm: 0909222649</p>
+        </div>
+        <b id="resmargin" style=" margin: 20px 0; width: 4px;; background-color: #1A4185; text-align: center;flex: 1;"></b>
+        <div class="item item3">
+            <p class="content-footer">Mọi phản hồi và đóng góp ý kiến của khách hàng vui lòng liên hệ gmail:<a href="mailto:email@example.com"> kebuontranh0812@gmail.com</a></p>
+        </div>
+        </div>
+
+        <div class="footer2">Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</div>
+    </div>
+<script  src="asset/js/javascript.js"></script>
+<script  src="asset/js/local.js"></script>
+</body>
+</html>

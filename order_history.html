@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/order_history.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <span><i class="fas fa-phone"></i>0909246319 -----</span>
+            <span><i class="fas fa-envelope"></i> kebuontranh@gmail.com -----</span>
+            <span><i class="fas fa-map-marker-alt"></i>123/23 hòa bình</span>
+          </div>
+          <div class="user-actions">
+            <a class="login-link">
+              <i class="fas fa-user"></i>
+              <span class="name">thanhngo0812@gmail.com</span>
+            </a>
+            <div class="login-dropdown">
+              <a href="index.html" class="login-option">đăng xuất</a>
+              <a href="order_history.html" class="login-option">lịch sử mua hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container">
+          <div class="logo">
+            <a href="index_account.html" class="logo-link"
+              ><img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a
+            >
+          </div>
+          <div class="search-bar">
+            <input type="text" style="color: #1A4185 ;background-color: #fedd9c;" placeholder="nhập tên tranh ở đây" />
+            <a href="search_account.html" class="search-button">tìm kiếm</a>
+          </div>
+          <div class="search-bar1">
+            <a href="nangcao_account.html" class="search-button">Tìm kiếm nâng cao</a>
+          </div>
+          <div class="user-menu">
+            <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="index_account.html">Trang chủ</a></li>
+            <li> <a href="category_account.html">Tranh phong cảnh</a></li>
+            <li><a href="category_account.html">Tranh hoa</a></li>
+            <li><a href="category_account.html">Tranh trừu tượng</a></li>
+            <li><a href="category_account.html">Tranh tĩnh vật</a></li>
+            <li><a href="category_account.html">Tranh ngựa</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="order-history-container">
+                <h1 class="page-title">lịch sử mua hàng</h1>
+                
+                <div class="order-filters">
+                    <div class="filter-tabs">
+                        <button class="filter-tab active">tất cả đơn</button>
+                        <button class="filter-tab">đang xử lí</button>
+                        <button class="filter-tab">đã hoàn tất</button>
+                        <button class="filter-tab">đã hủy</button>
+                    </div>
+                    <div class="date-filter">
+                        <input type="date" class="date-input" value="2024-01-01">
+                        <span>To</span>
+                        <input type="date" class="date-input" value="2024-12-31">
+                    </div>
+                </div>
+
+                <div class="order-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>mã</th>
+                                <th>ngày</th>
+                                <th>phương thức</th>
+                                <th>trạng thái</th>
+                                <th>tổng tiền</th>
+                                <th>chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: #d10024;">#1111</td>
+                                <td>2024-03-17</td>
+                                <td>tiền mặt</td>
+                                <td><span class="status-badge delivered">đã hoàn tất</span></td>
+                                <td style="color: #d10024;">56.000.000 vnđ</td>
+                                <td>
+                                    <a href="order_id_history.html" class="details-btn">chi tiết</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #d10024;">#2222</td>
+                                <td>2024-02-14</td>
+                                <td>thẻ thanh toán</td>
+                                <td><span class="status-badge processing">đang xử lí</span></td>
+                                <td style="color: #d10024;">200.000.000 vnđ</td>
+                                <td>
+                                    <a href="order_id_history.html" class="details-btn">chi tiết</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #d10024;">#3333</td>
+                                <td>2024-01-01</td>
+                                <td>chuyển khoản</td>
+                                <td><span class="status-badge cancelled">đã hủy</span></td>
+                                <td style="color: #d10024;">80.000.000 vnđ</td>
+                                <td>
+                                    <a href="order_id_history.html" class="details-btn">chi tiết</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh - admin</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="./admin.html">Trang chủ</a></li>
+                    <li><a href="./user-management.html">Người dùng</a></li>
+                    <li><a href="./order-management.html">đơn hàng</a></li>
+                    <li><a href="./product-management.html">sản phẩm</a></li>
+                    <li><a href="./business_performance.html">thống kê</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <div class="user-icon">
+                    <i data-lucide="user-circle"></i>
+                </div>
+                <span class="admin-name">Admin: Ngocong</span>
+                <a  href="./loginad.html" class="logout">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="admin-content2">
+                <h1 style="color: #1A4185;">thay đổi trạng thái đơn hàng</h1>
+                <form id="orderStatusForm">
+                    <div class="form-group">
+                        <label for="order-id" >mã đơn hàng:</label>
+                        <input type="text" id="order-id" name="order-id" value="#2532" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="current-status">Trạng thái hiện tại:</label>
+                        <input type="text" id="current-status" name="current-status" value="chờ xác nhận" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-status">trạng thái mới:</label>
+                        <select id="new-status" name="new-status">
+                            <option value="">Select new status</option>
+                            <option value="chờ xác nhận">chờ xác nhận</option>
+                            <option value="đang xử lí">đang xử lí</option>
+                            <option value="đã hoàn tất">đã hoàn tất</option>
+                            <option value="đã hủy">đã hủy</option>
+                        </select>
+                    </div>
+                    <button type="submit"  onclick="myfucn()" >cập nhật trạng thái</button>
+                    <script>
+                        function myfucn() {
+                            // Hiển thị popup thông báo
+                            alert("đã cập nhật thành công");
+                        }
+                    </script>
+                </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+        </div>
+    </footer>
+</body>
+</html> 

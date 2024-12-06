@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/product_details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <span><i class="fas fa-phone"></i> 0909246319 -----</span>
+            <span><i class="fas fa-envelope"></i>  kebuontranh@gmail.com -----</span>
+            <span><i class="fas fa-map-marker-alt"></i>123/23 hòa bình</span>
+          </div>
+          <div class="user-actions">
+            <a class="login-link">
+              <i class="fas fa-user"></i>
+              <span class="name">thanhngo0812@gmail.com</span>
+            </a>
+            <div class="login-dropdown">
+              <a href="index.html" class="login-option">đăng xuất</a>
+              <a href="order_history.html" class="login-option">lịch sử mua hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container">
+          <div class="logo">
+            <a href="index_account.html" class="logo-link"
+              ><img style="width: 200px;height: 100px;" src="logo.png" alt="logo"></a>
+          </div>
+          <div class="search-bar">
+            <input type="text" style="color: #1A4185 ;background-color: #fedd9c;" placeholder="nhập tên tranh ở đây" />
+            <a href="search_account.html" class="search-button">tìm kiếm</a>
+          </div>
+          <div class="search-bar1">
+            <a href="nangcao_account.html" class="search-button">Tìm kiếm nâng cao</a>
+          </div>
+          <div class="user-menu">
+            <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li> <a href="category_account.html">Tranh phong cảnh</a></li>
+            <li><a href="category_account.html">Tranh hoa</a></li>
+            <li><a href="category_account.html">Tranh trừu tượng</a></li>
+            <li><a href="category_account.html">Tranh tĩnh vật</a></li>
+            <li><a href="category_account.html">Tranh ngựa</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="product-content">
+          <div class="product-details">
+            <div class="product-image">
+              <img src="./img/bungsang.jpg" alt="Gundam Model XYZ" />
+            </div>
+            <div class="product-info">
+              <h1 style="color:#1A4185">Bừng sáng</h1>
+              <p class="category">Tranh trừu tượng</p>
+              <p class="price">5.000.000.000 vnđ</p>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star-empty">☆</span>
+              </div>
+              <p class="description" style="color: #1A4185;">
+                Bức tranh "Bừng sáng" là một bản giao hưởng màu sắc rực rỡ, đánh thức mọi giác quan. Những gam màu nóng bỏng hòa quyện, tạo nên một không gian tràn đầy năng lượng tích cực, khơi gợi niềm hy vọng và phấn khích trong lòng người xem.
+              </p>
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button class="add-to-cart" type="submit"  onclick="myFunction()">thêm vào giỏ hàng</button>
+              <script>
+                  function myFunction() {
+                    alert("thêm vào giỏ hàng thành công");
+                  }
+                  </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+      </div>
+    </footer>
+    <script src="./js/popup.js"></script>
+  </body>
+</html>

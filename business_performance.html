@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Mahiru Shop</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="./admin.html">Trang chủ</a></li>
+                    <li><a href="./user-management.html">Người dùng</a></li>
+                    <li><a href="./order-management.html">đơn hàng</a></li>
+                    <li><a href="./product-management.html">sản phẩm</a></li>
+                    <li><a href="./business_performance.html">thống kê</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <div class="user-icon">
+                    <i data-lucide="user-circle"></i>
+                </div>
+                <span class="admin-name">Admin: Ngocong</span>
+                <a  href="./loginad.html" class="logout">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container admin-panel" style="
+        border-left-width: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    ">
+            <div class="admin-sidebar">
+                
+                <h2>thống kê</h2>
+                <ul>
+                        <li><a href="./business_performance.html">thống kê sản phẩm</a></li>
+                        <li><a href="./top5customer.html">top khách hàng</a></li>
+                </ul>
+            </div>
+            <section class="admin-content">
+                <h3 style="color: #b91c1c;">thống kê sản phẩm</h3>
+                <div class="filters">
+                    <div class="filters-row">
+                      <div class="filter-group">
+                        <label class="filter-label"></label>
+                        <div class="date-range">
+                          <div>
+                            <label>từ ngày</label>
+                            <input type="date" id="start-date" name="start-date" />
+                          </div>
+                          <div class="date-to">
+                            <label>đến ngày</label>
+                            <input type="date" id="end-date" name="end-date" />
+                          </div>
+                        </div>
+                    </div>
+      
+
+      
+                    <button class="btn">tìm kiếm</button>
+                      </div>
+                    </div>
+
+      
+
+
+                <table class="table-wrapper">
+                    <thead>
+                        <tr>
+                            <th>mã</th>
+                            <th>tên sản phẩm</th>
+                            <th>ảnh</th>
+                            <th>giá</th>
+                            <th>số lượng đã bán</th>
+                            <th>tổng lợi nhuận</th>
+                            <th>các đơn hàng mua</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>an</td>
+                            <td><img src="./img/an.png" alt="Bocchi Hitori" class="product-image"></td>
+                            <td>20.000.000 vnđ</td>
+                            <td>100</td>
+                            <td>100.000.000 vnđ</td>
+                            <td>
+                                <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>bù nhìn</td>
+                            <td><img src="./img/bunhin.png" alt="GD.Frame Vidar" class="product-image"></td>
+                            <td>15.000.000 vnđ</td>
+                            <td>75</td>
+                            <td>37.000.000 vnđ</td>
+                            <td>
+                                <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>hoài niệm</td>
+                            <td><img src="./img/hoainiem.png" alt="GD.Frame Vidar" class="product-image"></td>
+                            <td>25.000.000 vnđ</td>
+                            <td>70</td>
+                            <td>40.000.000 vnđ</td>
+                            <td>
+                                <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>dấu chân phía trước</td>
+                            <td><img src="./img/dauchanphiatruoc.png" alt="Godness Aqua" class="product-image"></td>
+                            <td>12.000.000 vnđ</td>
+                            <td>50</td>
+                            <td>20.000.000 vnđ</td>
+                            <td>
+                                <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                            </td>
+                        </tr>
+                            <td>5</td>
+                            <td>độc mã thảo nguyên</td>
+                            <td><img src="./img/docmathaonguyen.png" alt="Neco Arc" class="product-image"></td>
+                            <td>200.000.000 vnđ</td>
+                            <td>30</td>
+                            <td>100.000.000 vnđ</td>
+                            <td>
+                                <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>tĩnh vật hoa cúc</td>
+                            <td><img src="./img/tinhvathoacuc.png" alt="Kamen rider Kabuto" class="product-image"></td>
+                            <td>17.000.000 vnđ</td>
+                            <td>50</td>
+                            <td>15.000.000 vnđ</td>
+                            <td>
+                                <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                            </td>
+                            <tr>
+                                <td>7</td>
+                                <td>bên khung cửa</td>
+                                <td><img src="./img/benkhungcua.png" alt="pearto" class="product-image"></td>
+                                <td>90.000.000 vnđ</td>
+                                <td>1</td>
+                                <td>15.000.000 vnđ</td>
+                                <td>
+                                    <a href="./related-invoice.html" class="btn" style="background-color: #1A4185; color: white">xem</a>
+                                </td>
+                            <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4 >Tổng lợi nhuận</h4>
+                        <p style="color: #b91c1c;">1.000.213.000 vnđ</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>sản phẩm bán chạy nhất</h4>
+                        <p style="color: #b91c1c;">an (100 sản phẩm)</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>sản phẩm ế nhất</h4>
+                        <p style="color: #b91c1c;">bên khung cửa (1 sản phẩm)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script>
+    lucide.createIcons();
+</script>
+<footer style="background-color: #FBBF49;">
+    <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+        <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+    </div>
+</footer>
+</html>

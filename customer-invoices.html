@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="./admin.html">Trang chủ</a></li>
+                    <li><a href="./user-management.html">Người dùng</a></li>
+                    <li><a href="./order-management.html">đơn hàng</a></li>
+                    <li><a href="./product-management.html">sản phẩm</a></li>
+                    <li><a href="./business_performance.html">thống kê</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <div class="user-icon">
+                    <i data-lucide="user-circle"></i>
+                </div>
+                <span class="admin-name">Admin: Ngocong</span>
+                <a  href="./loginad.html" class="logout">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+    <body>    
+        <main>
+            <div class="container">
+                <table class="customer-info">
+                    <tr>
+                        <td>những hóa đơn liên quan đến khách hàng: jackson123@gmail.com</td>
+                    </tr>
+            </table>
+            <div class="admin-panel">
+                <table class="invoice-table">
+                    <thead>
+                        <tr>
+                            <th style="color: #d10024;">mã hóa đơn</th>
+                            <th style="color: #d10024;">ngày đặt</th>
+                            <th style="color: #d10024;">tổng tiền</th>
+                            <th style="color: #d10024;">chi tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>2024-03-15</td>
+                            <td>12.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>2024-03-20</td>
+                            <td>75.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>2024-03-25</td>
+                            <td>200.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>2024-04-01</td>
+                            <td>100.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2024-04-05</td>
+                            <td>50.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>006</td>
+                            <td>2024-03-15</td>
+                            <td>150.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>007</td>
+                            <td>2024-03-20</td>
+                            <td>75.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>008</td>
+                            <td>2024-03-25</td>
+                            <td>200.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>009</td>
+                            <td>2024-04-01</td>
+                            <td>100.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>010</td>
+                            <td>2024-04-05</td>
+                            <td>50.000.000 vnđ</td>
+                            <td>
+                                <div class="invoice-actions">
+                                    <a href="detail-invoice.html" class="btn">chi tiết</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">&raquo;</a>
+            </div>
+            </div>
+        </main>
+        <footer style="background-color: #FBBF49;">
+            <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer>
+    </body>
+    </html>

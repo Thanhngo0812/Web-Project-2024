@@ -1,8 +1,2 @@
 # Web-Project-2024
-pass admin:
-tk:admin
-mk:admin
-
-pass cus
-tk:cus
-mk:cus
+3122560069 - Ngô Công Thành

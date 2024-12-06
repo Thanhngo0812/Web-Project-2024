@@ -3,279 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kẻ Buôn Tranh</title>
-    <link rel="stylesheet" href="asset/css/admin.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>kẻ buôn tranh - admin</title>
+    <link rel="stylesheet" href="./css/admin-styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="form_information">
-        
-        <div class="form_infor">
-            
-            <div class="form_infor-box">
-                <span class="icon-close-infor">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </span>
-                <div style="text-align: center;margin-top: 50px;"><h1 >THÔNG TIN KHÁCH HÀNG</h1></div>
-                <div style="text-align: center;" >
-                        
-                <h3 class="name_infor"style="padding-left:10px;margin:10px"></h3>
-                <h3 class="email"style="padding-left:10px;margin:10px"></h3>
-                <h3 class="number_phone"style="padding-left:10px;margin:10px"></h3>
-                <h3 class="dia_chi"style="padding-left:10px;margin:10px"></h3>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="./admin.html">Trang chủ</a></li>
+                        <li><a href="./user-management.html">Người dùng</a></li>
+                        <li><a href="./order-management.html">đơn hàng</a></li>
+                        <li><a href="./product-management.html">sản phẩm</a></li>
+                        <li><a href="./business_performance.html">thống kê</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info">
+                    <div class="user-icon">
+                        <i data-lucide="user-circle"></i>
+                    </div>
+                    <span class="admin-name">Admin: Ngocong</span>
+                    <a  href="./loginad.html" class="logout">Đăng xuất</a>
                 </div>
             </div>
-        </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="admin-panel">
+                    <div class="admin-content">
+                        <h1 style="color: #1A4185;">Bảng tổng quát:</h1>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <h4>Tổng sản phẩm đã bán</h4>
+                                <p class="stat-number">1,234</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>Tổng đơn hàng đã bán</h4>
+                                <p class="stat-number">1050</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>Tổng số khách hàng</h4>
+                                <p class="stat-number">751</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>Lợi nhuận thu về</h4>
+                                <p class="stat-number">1.234.432.000 vnđ</p>
+                            </div>
+                        </div>
+
+                        <h2 style="color: #1A4185;"> những Đơn hàng gần nhất:</h2>
+                        <table class="order-table">
+                            <thead>
+                                <tr >
+                                    <th style="background-color: #1A4185;color: white;">Mã đơn hàng</th>
+                                    <th style="background-color: #1A4185;color: white;">Khách hàng</th>
+                                    <th style="background-color: #1A4185;color: white;">ngày đặt</th>
+                                    <th style="background-color: #1A4185;color: white;">Tổng tiền</th>
+                                    <th style="background-color: #1A4185; color: white;">Trạng thái</th>
+                                    <th style="background-color: #1A4185;color: white;">chi tiết</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#11111</td>
+                                    <td>bangkieu@gmail.com</td>
+                                    <td>2024-12-01</td>
+                                    <td>12.000.000 vnđ</td>
+                                    <td>Đang xử lí</td>
+                                    <td><a href="detail-order.html" class="action-btn">chi tiết</a></td>
+                                </tr>
+                                <tr>
+                                    <td>#22222</td>
+                                    <td>jojo@gmail.com</td>
+                                    <td>2024-11-30</td>
+                                    <td>100.000.000 vnđ</td>
+                                    <td>đã giao</td>
+                                    <td><a href="detail-order.html" class="action-btn">chi tiết</a></td>
+                                </tr>
+                                <tr>
+                                    <td>#33333</td>
+                                    <td>bangchito@gmail.com</td>
+                                    <td>2024-11-30</td>
+                                    <td>200.500.000 vnđ</td>
+                                    <td>đã giao</td>
+                                    <td><a href="detail-order.html" class="action-btn">chi tiết</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 style="color: #1A4185;">Top tranh bán chạy</h2>
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <img src="./img/hoainiem.png" alt="hoainiem">
+                                <h3>Hoài niệm</h3>
+                                <p class="price">120.000.000 vnđ</p>
+                                <p class="sales">đã bán: 121</p>
+                                <a class="action-btn" href="edit-product.html">sửa</a>
+                            </div>
+                            <div class="product-card">
+                                <img src="./img/havang.png" alt="havang">
+                                <h3>Hạ vắng</h3>
+                                <p class="price">20.000.000 vnđ</p>
+                                <p class="sales">đã bán: 90</p>
+                                <a class="action-btn" href="edit-product.html">sửa</a>
+                            </div>
+                            <div class="product-card">
+                                <img src="./img/hoanghontrenpho.png" alt="hhth">
+                                <h3>hoàng hôn trên phố</h3>
+                                <p class="price">25.000.000 vnđ</p>
+                                <p class="sales">đã bán: 60</p>
+                                <a class="action-btn" href="edit-product.html">sửa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+
+            </div>
+        </footer>
     </div>
-    <div class="picture_information">
-        
-        <div class="picture_infor">
-            
-            <div class="picture_infor-box">
-                <span class="icon-close-infor_img">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </span>
-                <div class="colum1">
-                <div class="picname" style="text-align: center;">
-                    <label>Tên Sản Phẩm</label>
-                    <br>
-                    <input type="text" name="" id="fixname">
-                </div>
-                <div class="picname" style="text-align: center;">
-                    <label>giá </label>
-                    <br>
-                    <input type="number" name="" id="fixprice" min="1000000" max="999999999999">
-                </div>
-                <div class="typename" style="text-align: center;">
-                    <label>TRANH</label>
-                    <br>
-                    <select id="typefix">
-                        <option value="tranh phong cảnh">TRANH PHONG CẢNH</option>
-                        <option value="tranh trừu tượng">TRANH TRỪU TƯỢNG</option>
-                        <option value="tranh tĩnh vật">TRANH TĨNH VẬT</option>
-                        <option value="tranh ngựa">TRANH NGỰA</option>
-                        <option value="tranh hoa">TRANH HOA</option>
-                    </select>
-                </div>
-                <div class="tonename" style="text-align: center;">
-                    <label>Tone</label>
-                    <br>
-                    <select id="tonefix">
-                        <option value="nóng">nóng</option>
-                        <option value="lạnh">lạnh</option>
-                    </select>
-                </div>
-                <div class="materialname" style="text-align: center;">
-                    <label>chất liệu</label>
-                    <br>
-                    <select id="materialfix">
-                        <option value="acrylic">acrylic</option>
-                        <option value="sơn dầu">sơn dầu</option>
-                    </select>
-                </div>
-            </div>
-            <div class="colum2">
-           <div class="picname" style="text-align: center;">
-                <label>hình ảnh</label>
-                <br>
-                <img id="imgfix" src="asset/img/img.png" height=88.173px width=88.173px style="border-radius: 20px;margin-left: 1%;">
-                <input style="margin-left: 70px;margin-top: 10px;width: 320px;color: aliceblue;" type="file" name="" id="fixpic">
-            </div>   
-            <div class="picname" style="text-align: center;margin-top: 10px;">
-                <label>hình ảnh chi tiết</label>
-                <br>
-                <img id="imgctfix" src="asset/img/imgct.png" height=123.333px width=191.666px style="border-radius: 20px; margin-left: 1%;">
-                <input style="margin-left: 70px;margin-top: 10px;width: 320px; color: aliceblue;" type="file" name="" id="fixpicct">
-            </div>  
-            <div id="fixoption"style="display: flex;justify-content: center;margin-top: 20px;">
-                
-            </div>
-        </div>
-            </div>
-        </div>
-    </div>
-    <!-- header PHAP -->
-    <div class="header">
-        <div class="top_header">
-            <div class="logo"><a href=""><img style="width: 250px;height: 100%;" src="asset/img/logo.png" alt="logo"></a></div>
-            <div ><a href="#out"class="list_bot_header hoptac" onclick="logout()"><h2>đăng xuất</h2></a></div>
-        </div>
-        <div class="bot_header">
-            <div><a href=""class="list_bot_header ">TRANG CHỦ</a></div>
-            <div class="list_menu">
-                <div  class="danhsach" onclick="moveto('.landscape_manage')" style="padding-left: 5px;padding-right: 5px;"><a >quản lí tranh</a></div>
-                <div class="submenu">   
-                </div>
-            </div>
-            <div><a href="#donhang"class="list_bot_header donhang" onclick="billlist('.donhang_manage')">quản lí đơn hàng</a></div>        </div>
-    </div>
-    <div class="main_home">
-        <div class="main_home_content">
-            chào mừng bạn đã trở lại
-        </div>
-    </div>
-    <div class="donhang_manage">
-        <div class="donhang_content">      
-            <div class="piccontent1donhang">
-             <div class="piccontent1_header">Danh sách đơn hàng</div>
-             <table></table>
-            </div>
-            <div class="piccontent2">
-             <div class="finding_nemo">
-                 <div class="piccontent1_header">tìm kiếm</div>
-                 <div class="picname" style="text-align: center;">
-                     <label>từ ngày</label>
-                     <br>
-                     <input type="date" name="" id="downdate">
-                 </div>
-                 <div class="picname" style="text-align: center;">
-                     <label>đến ngày</label>
-                     <br>
-                     <input type="date" name="" id="update">
-                 </div>
-                 <div class="typename" style="text-align: center;">
-                     <label>trạng thái</label>
-                     <br>
-                     <select id="statusfind">
-                         <option value="all">chọn tất cả</option>
-                         <option value="chưa xử lý">chưa xử lý</option>
-                         <option value="đã xử lí">đã xử lí</option>
-                     </select>
-                 </div>
-                 <div style="display: flex;justify-content: center;">
-                 <div class="resetfind" style="margin-right: 20px;margin-bottom: 20px; margin-top: 10px;" onclick="findbill()">find</div>
-                 <div class="resetfind" style="margin-left: 10px; margin-bottom: 20px; margin-top: 10px;" onclick="resetbill()" >reset</div>
-             </div>
-             </div>
-            </div>
-         </div>  
-    </div>
-    <div class="landscape_manage">
-        <div class="landscape_content">      
-               <div class="piccontent1">
-                <div class="piccontent1_header">Danh sách sản phẩm</div>
-                <table>  
-                </table>
-                <div class="picture_paging">
-                </div>
-               </div>
-               <div class="piccontent2">
-                <div class="finding_nemo">
-                    <div class="piccontent1_header">tìm kiếm</div>
-                    <div class="picname" style="text-align: center;">
-                        <label>Tên Sản Phẩm</label>
-                        <br>
-                        <input type="text" name="" id="findname">
-                    </div>
-                    <div class="picname" style="text-align: center;">
-                        <label>giá tối thiểu</label>
-                        <br>
-                        <input type="number" name="" id="minprice">
-                    </div>
-                    <div class="picname" style="text-align: center;">
-                        <label>giá tối đa</label>
-                        <br>
-                        <input type="number" name="" id="maxprice">
-                    </div>
-                    <div class="typename" style="text-align: center;">
-                        <label>TRANH</label>
-                        <br>
-                        <select id="typefind">
-                            <option value="all">chọn tất cả</option>
-                            <option value="tranh phong cảnh">TRANH PHONG CẢNH</option>
-                            <option value="tranh trừu tượng">TRANH TRỪU TƯỢNG</option>
-                            <option value="tranh tĩnh vật">TRANH TĨNH VẬT</option>
-                            <option value="tranh ngựa">TRANH NGỰA</option>
-                            <option value="tranh hoa">TRANH HOA</option>
-                        </select>
-                    </div>
-                    <div class="tonename" style="text-align: center;">
-                        <label>Tone</label>
-                        <br>
-                        <select id="tonefind">
-                            <option value="all">chọn tất cả</option>
-                            <option value="nóng">nóng</option>
-                            <option value="lạnh">lạnh</option>
-                        </select>
-                    </div>
-                    <div class="materialname" style="text-align: center;">
-                        <label>chất liệu</label>
-                        <br>
-                        <select id="materialfind">
-                            <option value="all">chọn tất cả</option>
-                            <option value="acrylic">acrylic</option>
-                            <option value="sơn dầu">sơn dầu</option>
-                        </select>
-                    </div>
-                    <div style="display: flex;justify-content: center;">
-                    <div class="resetfind" style="margin-right: 20px;margin-bottom: 20px;" onclick="find()">find</div>
-                    <div class="resetfind" style="margin-left: 10px; margin-bottom: 20px;" onclick="reset()" >reset</div>
-                </div>
-                </div>
-                <div class="creating_nemo">
-                    <div class="piccontent1_header">tạo sản phẩm</div>
-                    <div class="picname" style="text-align: center;">
-                        <label>Tên Sản Phẩm</label>
-                        <br>
-                        <input type="text" name="" id="createname">
-                    </div>
-                    <div class="picname" style="text-align: center;">
-                        <label>giá </label>
-                        <br>
-                        <input type="number" name="" id="createprice" min="1000000" max="999999999999">
-                    </div>
-                    <div class="typename" style="text-align: center;">
-                        <label>TRANH</label>
-                        <br>
-                        <select id="typecreate">
-                            <option value=""></option>
-                            <option value="tranh phong cảnh">TRANH PHONG CẢNH</option>
-                            <option value="tranh trừu tượng">TRANH TRỪU TƯỢNG</option>
-                            <option value="tranh tĩnh vật">TRANH TĨNH VẬT</option>
-                            <option value="tranh ngựa">TRANH NGỰA</option>
-                            <option value="tranh hoa">TRANH HOA</option>
-                        </select>
-                    </div>
-                    <div class="tonename" style="text-align: center;">
-                        <label>Tone</label>
-                        <br>
-                        <select id="tonecreate">
-                            <option value=""></option>
-                            <option value="nóng">nóng</option>
-                            <option value="lạnh">lạnh</option>
-                        </select>
-                    </div>
-                    <div class="materialname" style="text-align: center;">
-                        <label>chất liệu</label>
-                        <br>
-                        <select id="materialcreate">
-                            <option value=""></option>
-                            <option value="acrylic">acrylic</option>
-                            <option value="sơn dầu">sơn dầu</option>
-                        </select>
-                    </div>
-               <div class="picname" style="text-align: center;">
-                    <label>hình ảnh</label>
-                    <br>
-                    <img id="imgcreate" src="asset/img/img.png" height=88.173px width=88.173px style="border-radius: 20px;">
-                    <input style="margin-left: 70px;margin-top: 10px;width: 320px;color: aliceblue;" type="file" name="" id="createpic">
-                </div>   
-                <div class="picname" style="text-align: center;margin-top: 10px;">
-                    <label>hình ảnh chi tiết</label>
-                    <br>
-                    <img id="imgctcreate" src="asset/img/imgct.png" height=123.333px width=191.666px style="border-radius: 20px;">
-                    <input style="margin-left: 70px;margin-top: 10px;width: 320px; color: aliceblue;" type="file" name="" id="createpicct">
-                </div>  
-                <div style="display: flex;justify-content: center;margin-top: 20px;">
-                    <div class="resetfind" style="margin-right: 20px;margin-bottom: 20px;" onclick="addon()">create</div>
-                    <div class="resetfind" style="margin-left: 10px; margin-bottom: 20px;" onclick="resetcreate()" >reset</div>
-                </div>
-            </div>
-               </div>
-            </div>       
-     </div>
-    </div>
-    
-<script  src="asset/js/admin.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kẻ buôn tranh</title>
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <img style="width: 200px;height:100px;" src="logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="./admin.html">Trang chủ</a></li>
+                        <li><a href="./user-management.html">Người dùng</a></li>
+                        <li><a href="./order-management.html">đơn hàng</a></li>
+                        <li><a href="./product-management.html">sản phẩm</a></li>
+                        <li><a href="./business_performance.html">thống kê</a></li>
+                    </ul>
+                </nav>
+                <div class="user-info">
+                    <div class="user-icon">
+                        <i data-lucide="user-circle"></i>
+                    </div>
+                    <span class="admin-name">Admin: Ngocong</span>
+                    <a  href="./loginad.html" class="logout">Đăng xuất</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="admin-panel">
+                    <div class="admin-sidebar">
+                        <h2 style="color: #d10024;">quản lý người dùng</h2>
+                        <ul>
+                            <li style="color: #1A4185;"><a style="color: #1A4185;" href="./user-management.html">danh sách người dùng</a></li>
+                            <li><a style="color: #1A4185;" href="./add-user.html">thêm người dùng mới</a></li>
+                        </ul>
+                    </div>
+                    <div class="admin-content">
+                        <h2 style="color: #d10024;">thêm người dùng mới</h2>
+                        <form class="user-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" >
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" >
+                                    <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                                    </button>
+                                </div>
+
+                            <div class="form-group">
+                                <label for="role">phân quyền</label>
+                                <select id="role" name="role" >
+                                    <option value="user">người dùng</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="manager">quản lý</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="full_dc">Địa chỉ</label>
+                                <input type="text" name="full_dc" placeholder="Địa chỉ cụ thể">
+                                    <select name="address_select" id="address-select">
+                                      <option value="">Quận</option>
+                                      <option value="1">Quận 1</option>
+                                      <option value="1">Quận 3</option>
+                                      <option value="1">Quận 4</option>
+                                      <option value="1">Quận 5</option>
+                                      <option value="1">Quận 6</option>
+                                      <option value="1">Quận 7</option>
+                                      <option value="1">Quận 8</option>
+                                      <option value="1">Quận 10</option>
+                                      <option value="1">Quận 11</option>
+                                      <option value="1">Quận 12</option>
+                                      <option value="1">Quận Tân bình</option>
+                                      <option value="1">Quận Tân phú</option>
+                                      <option value="1">Quận Bình tân</option>
+                                      <option value="1">Quận Bình thạnh</option>
+                                      <option value="1">Quận Gò vấp</option>
+                                      <option value="1">Quận Phú nhuận</option>
+        
+                                  </select>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" onclick="myFunction()" class="action-btn" style="background-color:#1A4185; color: white;">thêm</button>
+                                <script>
+                                    function myFunction(){
+                                        alert("thêm thành công")
+                                    }
+                                </script>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer style="background-color: #FBBF49;">
+            <div class="container" style="background-color: #FBBF49; color: #1A4185;">
+                <p>Copyright © 2023 KẺ BUÔN TRANH. Ghi rõ nguồn "Kẻ buôn tranh" khi sử dụng thông tin từ trang web này.</p>
+            </div>
+        </footer> 
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
